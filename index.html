@@ -87,7 +87,6 @@
     }
 
     .product-description {
-      /* Removido o background extra */
       padding: 0 0 15px 0;
       line-height: 1.4;
     }
@@ -95,6 +94,44 @@
     .checkmark {
       color: #4cd964;
       margin-right: 6px;
+    }
+
+    /* ============ NOVOS ELEMENTOS ============ */
+    /* Container que agrupa ENVIO RÁPIDO e 14% OFF */
+    .offer-info {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 15px;
+    }
+
+    /* ENVIO RÁPIDO */
+    .fast-shipping {
+      display: inline-flex;
+      align-items: center;
+      border: 1px dashed #00c853; /* Borda pontilhada verde */
+      color: #00c853;           /* Texto verde */
+      font-size: 0.9rem;
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+
+    .fast-shipping img {
+      width: 16px;
+      height: 16px;
+      margin-right: 6px;
+    }
+
+    /* 14% OFF */
+    .discount {
+      background-color: #00c853;
+      color: #fff;
+      font-size: 0.9rem;
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-weight: bold;
     }
 
     /* Botões */
@@ -135,7 +172,6 @@
       .btn-price {
         padding: 18px 0;
         font-size: 20px;
-        }
       }
       .site-header p {
         font-size: 1rem;
@@ -157,6 +193,12 @@
       }
       .product-image {
         max-width: 100%;
+      }
+      .fast-shipping {
+        font-size: 0.85rem;
+      }
+      .discount {
+        font-size: 0.85rem;
       }
     }
   </style>
@@ -188,6 +230,20 @@
         O top de linha da atualidade, com a melhor tela e câmera, 
         acabamento em titânio e excelente bateria
       </p>
+      
+      <!-- NOVO BLOCO: ENVIO RÁPIDO + 14% OFF -->
+      <div class="offer-info">
+        <div class="fast-shipping">
+          <!-- Ícone de caminhão (exemplo). Substitua por um link próprio, se quiser -->
+          <img src="https://i.postimg.cc/NGHnHWS0/truck.png" alt="Caminhão">
+          ENVIO RÁPIDO
+        </div>
+        <div class="discount">
+          14% OFF
+        </div>
+      </div>
+      <!-- FIM DO BLOCO -->
+
       <div class="buttons-container">
         <a href="#" class="btn-price">
           <img 
@@ -226,6 +282,19 @@
         Melhor celular da Samsung, processador poderoso, 
         câmera de 200MP com IA e S Pen incluída
       </p>
+      
+      <!-- NOVO BLOCO: ENVIO RÁPIDO + 14% OFF -->
+      <div class="offer-info">
+        <div class="fast-shipping">
+          <img src="https://i.postimg.cc/NGHnHWS0/truck.png" alt="Caminhão">
+          ENVIO RÁPIDO
+        </div>
+        <div class="discount">
+          14% OFF
+        </div>
+      </div>
+      <!-- FIM DO BLOCO -->
+
       <div class="buttons-container">
         <a href="#" class="btn-price">
           <img 

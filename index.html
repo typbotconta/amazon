@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Lista de Celulares</title>
+  <style>
+    /* Reset básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #2b2b2b;
+      color: #fff;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 600px;
+      margin: 30px auto;
+    }
+
+    /* Cabeçalho do site */
+    .site-header {
+      margin-bottom: 20px;
+    }
+    .site-header h1 {
+      font-size: 1.8rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .site-header p {
+      font-size: 1.1rem;
+      color: #ccc;
+      line-height: 1.4;
+    }
+
+    /* Card de produto */
+    .product-card {
+      position: relative;
+      background-color: #3a3a3a;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .product-number {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      background-color: #000;
+      color: #fff;
+      padding: 5px 10px;
+      border-radius: 4px;
+    }
+
+    .product-image {
+      display: block;
+      width: 100%;
+      max-width: 200px;
+      margin: 0 auto 15px auto;
+    }
+
+    .product-badge {
+      display: inline-block;
+      background-color: #ff9500;
+      color: #fff;
+      font-weight: bold;
+      padding: 4px 8px;
+      border-radius: 4px;
+      margin-bottom: 10px;
+    }
+
+    .product-title {
+      font-size: 1.1rem;
+      color: #ff3b30;
+      margin: 10px 0;
+      text-align: center;
+    }
+
+    .product-description {
+      background-color: #2f2f2f;
+      padding: 10px;
+      border-radius: 4px;
+      margin-bottom: 15px;
+      line-height: 1.4;
+    }
+
+    .checkmark {
+      color: #4cd964;
+      margin-right: 6px;
+    }
+
+    /* Botões */
+    .buttons-container {
+      text-align: center;
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+    }
+
+    .btn-price {
+      background-color: #ff3b30;
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+      font-weight: bold;
+      transition: background-color 0.3s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .btn-price:hover {
+      background-color: #e0201a;
+    }
+
+    .btn-icon {
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Cabeçalho do Site -->
+    <header class="site-header">
+      <h1>Melhores celulares 2025: Top 15 smartphones para comprar</h1>
+      <p>Conheça os melhores celulares de 2025! São várias opções, desde os tops de linha, até os modelos com o melhor custo-benefício.</p>
+    </header>
+
+    <!-- Card de Produto 1 -->
+    <div class="product-card">
+      <div class="product-number">1</div>
+      <img 
+        src="img/iphone15promax.jpg" 
+        alt="iPhone 15 Pro Max" 
+        class="product-image"
+      >
+      <div class="product-badge">maior desempenho</div>
+      <h2 class="product-title">
+        Apple iPhone 15 Pro Max 8GB RAM 256GB (5G)
+      </h2>
+      <p class="product-description">
+        <span class="checkmark">✔</span>
+        O top de linha da atualidade, com a melhor tela e câmera, 
+        acabamento em titânio e excelente bateria
+      </p>
+      <div class="buttons-container">
+        <a href="#" class="btn-price">
+          <img src="img/amazon-logo.png" alt="Amazon" class="btn-icon">
+          Ver preço
+        </a>
+        <a href="#" class="btn-price">
+          <img src="img/handshake-icon.png" alt="Parceiro" class="btn-icon">
+          Ver preço
+        </a>
+      </div>
+    </div>
+    <!-- Fim do Card de Produto 1 -->
+
+    <!-- Card de Produto 2 -->
+    <div class="product-card">
+      <div class="product-number">2</div>
+      <img 
+        src="img/samsungs24ultra.jpg" 
+        alt="Samsung Galaxy S24 Ultra" 
+        class="product-image"
+      >
+      <div class="product-badge">maior desempenho</div>
+      <h2 class="product-title">
+        Samsung Galaxy S24 Ultra 12GB RAM 512GB (5G)
+      </h2>
+      <p class="product-description">
+        <span class="checkmark">✔</span>
+        Melhor celular da Samsung, processador poderoso, 
+        câmera de 200MP com IA e S Pen incluída
+      </p>
+      <div class="buttons-container">
+        <a href="#" class="btn-price">
+          <img src="img/amazon-logo.png" alt="Amazon" class="btn-icon">
+          Ver preço
+        </a>
+        <a href="#" class="btn-price">
+          <img src="img/handshake-icon.png" alt="Parceiro" class="btn-icon">
+          Ver preço
+        </a>
+      </div>
+    </div>
+    <!-- Fim do Card de Produto 2 -->
+
+    <!-- Repita para mais produtos... -->
+
+  </div>
+
+</body>
+</html>

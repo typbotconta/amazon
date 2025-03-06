@@ -81,14 +81,14 @@
 
     .product-title {
       font-size: 1.1rem;
-      color: #fff; /* Ajustado para branco */
+      color: #fff;
       margin: 10px 0;
       text-align: center;
     }
 
     .product-description {
-      padding: 0 0 15px 0;
       line-height: 1.4;
+      margin-bottom: 15px;
     }
 
     .checkmark {
@@ -96,7 +96,6 @@
       margin-right: 6px;
     }
 
-    /* ============ NOVOS ELEMENTOS ============ */
     /* Container que agrupa ENVIO RÁPIDO e 14% OFF */
     .offer-info {
       display: flex;
@@ -110,8 +109,8 @@
     .fast-shipping {
       display: inline-flex;
       align-items: center;
-      border: 1px dashed #00c853; /* Borda pontilhada verde */
-      color: #00c853;           /* Texto verde */
+      border: 1px dashed #00c853; 
+      color: #00c853; 
       font-size: 0.9rem;
       padding: 4px 8px;
       border-radius: 4px;
@@ -138,7 +137,7 @@
     .buttons-container {
       display: flex;
       flex-direction: column;
-      gap: 10px; 
+      gap: 10px;
     }
 
     .btn-price {
@@ -167,7 +166,39 @@
       margin-right: 10px;
     }
 
-    /* Media Queries para celular */
+    /* SOBRE AS RECOMENDAÇÕES */
+    .recommendations {
+      background-color: #fff; /* fundo branco */
+      color: #000;          /* texto preto */
+      border-radius: 8px;
+      padding: 20px;
+      margin: 30px auto 10px auto;
+      max-width: 600px;
+    }
+    .recommendations h2 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+    .recommendations p {
+      line-height: 1.5;
+      font-size: 1rem;
+      color: #333;
+    }
+
+    /* Rodapé */
+    footer {
+      background-color: #1a1a1a;
+      text-align: center;
+      padding: 20px 10px;
+      margin-top: 20px;
+    }
+    footer p {
+      color: #ccc;
+      font-size: 0.9rem;
+      line-height: 1.4;
+    }
+
+    /* Responsividade */
     @media (max-width: 768px) {
       .btn-price {
         padding: 18px 0;
@@ -194,10 +225,19 @@
       .product-image {
         max-width: 100%;
       }
-      .fast-shipping {
+      .fast-shipping, .discount {
         font-size: 0.85rem;
       }
-      .discount {
+      .recommendations {
+        margin: 20px auto 10px auto;
+      }
+      .recommendations h2 {
+        font-size: 1.1rem;
+      }
+      .recommendations p {
+        font-size: 0.95rem;
+      }
+      footer p {
         font-size: 0.85rem;
       }
     }
@@ -230,11 +270,9 @@
         O top de linha da atualidade, com a melhor tela e câmera, 
         acabamento em titânio e excelente bateria
       </p>
-      
-      <!-- NOVO BLOCO: ENVIO RÁPIDO + 14% OFF -->
+      <!-- ENVIO RÁPIDO + 14% OFF -->
       <div class="offer-info">
         <div class="fast-shipping">
-          <!-- Ícone de caminhão (exemplo). Substitua por um link próprio, se quiser -->
           <img src="https://i.postimg.cc/NGHnHWS0/truck.png" alt="Caminhão">
           ENVIO RÁPIDO
         </div>
@@ -242,8 +280,6 @@
           14% OFF
         </div>
       </div>
-      <!-- FIM DO BLOCO -->
-
       <div class="buttons-container">
         <a href="#" class="btn-price">
           <img 
@@ -282,8 +318,7 @@
         Melhor celular da Samsung, processador poderoso, 
         câmera de 200MP com IA e S Pen incluída
       </p>
-      
-      <!-- NOVO BLOCO: ENVIO RÁPIDO + 14% OFF -->
+      <!-- ENVIO RÁPIDO + 14% OFF -->
       <div class="offer-info">
         <div class="fast-shipping">
           <img src="https://i.postimg.cc/NGHnHWS0/truck.png" alt="Caminhão">
@@ -293,8 +328,6 @@
           14% OFF
         </div>
       </div>
-      <!-- FIM DO BLOCO -->
-
       <div class="buttons-container">
         <a href="#" class="btn-price">
           <img 
@@ -316,9 +349,25 @@
     </div>
     <!-- Fim do Card de Produto 2 -->
 
-    <!-- Repita para mais produtos... -->
+    <!-- Repetir outros produtos se necessário... -->
 
+  </div><!-- /container -->
+
+  <!-- BLOCO SOBRE AS RECOMENDAÇÕES -->
+  <div class="recommendations">
+    <h2>Sobre as Recomendações</h2>
+    <p>
+      Todos os produtos aqui listados foram escolhidos com base em análises de especialistas.
+      Ao adquirir produtos através dos links de afiliado, você não paga nada a mais,
+      e nós recebemos uma comissão que nos ajuda a manter este site.
+    </p>
   </div>
+
+  <!-- RODAPÉ -->
+  <footer>
+    <p>© 2025 Melhores Celulares. Todos os direitos reservados.</p>
+    <p>Este site participa do Programa de Afiliados da Amazon e Mercado Livre.</p>
+  </footer>
 
 </body>
 </html>

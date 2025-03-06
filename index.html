@@ -28,7 +28,7 @@
       margin-bottom: 20px;
     }
     .site-header h1 {
-      font-size: 1.8rem; /* Ajuste conforme preferir */
+      font-size: 1.8rem;
       font-weight: bold;
       margin-bottom: 10px;
     }
@@ -40,7 +40,7 @@
 
     /* Card de produto */
     .product-card {
-      position: relative; 
+      position: relative;
       background-color: #3a3a3a;
       border-radius: 8px;
       padding: 20px;
@@ -112,10 +112,19 @@
       border-radius: 4px;
       font-weight: bold;
       transition: background-color 0.3s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
     .btn-price:hover {
       background-color: #e0201a;
+    }
+
+    .btn-icon {
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
     }
 
   </style>
@@ -124,9 +133,9 @@
 
   <div class="container">
 
-    <!-- Cabeçalho do Site (Título e texto introdutório) -->
+    <!-- Cabeçalho do Site -->
     <header class="site-header">
-      <h1>Melhores celulares 2025:<br>Top 15 smartphones para comprar</h1>
+      <h1>Melhores celulares 2025: Top 15 smartphones para comprar</h1>
       <p>Conheça os melhores celulares de 2025! São várias opções, desde os tops de linha, até os modelos com o melhor custo-benefício.</p>
     </header>
 
@@ -143,13 +152,19 @@
         Apple iPhone 15 Pro Max 8GB RAM 256GB (5G)
       </h2>
       <p class="product-description">
-        <span class="checkmark">&#10004;</span>
+        <span class="checkmark">✔</span>
         O top de linha da atualidade, com a melhor tela e câmera, 
         acabamento em titânio e excelente bateria
       </p>
       <div class="buttons-container">
-        <a href="#" class="btn-price">Ver preço</a>
-        <a href="#" class="btn-price">Ver preço</a>
+        <a href="#" class="btn-price">
+          <img src="img/amazon-logo.png" alt="Amazon" class="btn-icon">
+          Ver preço
+        </a>
+        <a href="#" class="btn-price">
+          <img src="img/handshake-icon.png" alt="Parceiro" class="btn-icon">
+          Ver preço
+        </a>
       </div>
     </div>
     <!-- Fim do Card de Produto 1 -->
@@ -167,13 +182,19 @@
         Samsung Galaxy S24 Ultra 12GB RAM 512GB (5G)
       </h2>
       <p class="product-description">
-        <span class="checkmark">&#10004;</span>
+        <span class="checkmark">✔</span>
         Melhor celular da Samsung, processador poderoso, 
         câmera de 200MP com IA e S Pen incluída
       </p>
       <div class="buttons-container">
-        <a href="#" class="btn-price">Ver preço</a>
-        <a href="#" class="btn-price">Ver preço</a>
+        <a href="#" class="btn-price">
+          <img src="img/amazon-logo.png" alt="Amazon" class="btn-icon">
+          Ver preço
+        </a>
+        <a href="#" class="btn-price">
+          <img src="img/handshake-icon.png" alt="Parceiro" class="btn-icon">
+          Ver preço
+        </a>
       </div>
     </div>
     <!-- Fim do Card de Produto 2 -->

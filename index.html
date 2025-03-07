@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <title>Lista de Celulares</title>
+  <title>Mais Vendidos</title>
   <style>
     /* Reset básico */
     * {
@@ -11,19 +11,16 @@
       padding: 0;
       box-sizing: border-box;
     }
-
     body {
       font-family: Arial, sans-serif;
       background-color: #2b2b2b;
       color: #fff;
     }
-
     .container {
       width: 90%;
       max-width: 600px;
       margin: 30px auto;
     }
-
     /* Cabeçalho do site */
     .site-header {
       margin-bottom: 20px;
@@ -38,7 +35,6 @@
       color: #ccc;
       line-height: 1.4;
     }
-
     /* Card de produto */
     .product-card {
       position: relative;
@@ -47,7 +43,6 @@
       padding: 20px;
       margin-bottom: 20px;
     }
-
     .product-number {
       position: absolute;
       top: 15px;
@@ -59,18 +54,17 @@
       padding: 5px 10px;
       border-radius: 4px;
     }
-
     .product-image {
       display: block;
       width: 150px;
       height: auto;
       margin: 0 auto 15px auto;
     }
-
+    /* Badge – agora com data attribute para cor */
     .product-badge {
       display: block;
       text-align: center;
-      background-color: #ff9500;
+      background-color: #ff9500; /* cor padrão se não for definido */
       color: #fff;
       font-weight: bold;
       padding: 4px 8px;
@@ -78,26 +72,21 @@
       margin: 10px auto;
       width: fit-content;
     }
-
     .product-title {
       font-size: 1.1rem;
       color: #fff;
       margin: 10px 0;
       text-align: center;
     }
-
     .product-description {
       line-height: 1.4;
       margin-bottom: 15px;
-      /* nova regra  para centralizar */
       text-align: center;
     }
-
     .checkmark {
       color: #4cd964;
       margin-right: 6px;
     }
-
     /* Container que agrupa ENVIO RÁPIDO e 14% OFF */
     .offer-info {
       display: flex;
@@ -106,26 +95,21 @@
       gap: 10px;
       margin-bottom: 15px;
     }
-
-    /* ENVIO RÁPIDO */
     .fast-shipping {
       display: inline-flex;
       align-items: center;
-      border: 1px dashed #00c853; 
-      color: #00c853; 
+      border: 1px dashed #00c853;
+      color: #00c853;
       font-size: 0.9rem;
       padding: 4px 8px;
       border-radius: 4px;
       font-weight: bold;
     }
-
     .fast-shipping img {
       width: 16px;
       height: 16px;
       margin-right: 6px;
     }
-
-    /* 14% OFF */
     .discount {
       background-color: #00c853;
       color: #fff;
@@ -134,14 +118,12 @@
       border-radius: 4px;
       font-weight: bold;
     }
-
     /* Botões */
     .buttons-container {
       display: flex;
       flex-direction: column;
       gap: 10px;
     }
-
     .btn-price {
       width: 100%;
       text-align: center;
@@ -157,26 +139,21 @@
       align-items: center;
       justify-content: center;
     }
-
     .btn-price:hover {
       background-color: #da3529;
     }
-
-    /* Nova classe para personalização especial */
     .btn-especial {
-      background-color: #da3529; /* Exemplo: cor vermelha */
+      background-color: #da3529;
     }
-
     .btn-icon {
       width: 50px;
       height: 50px;
       margin-right: 10px;
     }
-
     /* SOBRE AS RECOMENDAÇÕES */
     .recommendations {
-      background-color: #fff; /* fundo branco */
-      color: #000;          /* texto preto */
+      background-color: #fff;
+      color: #000;
       border-radius: 8px;
       padding: 20px;
       margin: 30px auto 10px auto;
@@ -191,7 +168,6 @@
       font-size: 1rem;
       color: #333;
     }
-
     /* Rodapé */
     footer {
       background-color: #1a1a1a;
@@ -204,7 +180,6 @@
       font-size: 0.9rem;
       line-height: 1.4;
     }
-
     /* Responsividade */
     @media (max-width: 768px) {
       .btn-price {
@@ -224,7 +199,6 @@
         padding: 8px 16px;
         font-size: 0.9rem;
       }
-      @media (max-width: 768px) {
       .btn-icon {
         width: 35px;
         height: 35px;
@@ -257,7 +231,7 @@
 
     <!-- Cabeçalho do Site -->
     <header class="site-header">
-      <h1>Melhores celulares 2025:<br>Top 15 smartphones para comprar</h1>
+      <h1>Melhores celulares 2025:<br>Top 10 smartphones para comprar</h1>
       <p>Conheça os melhores celulares de 2025! São várias opções, desde os tops de linha, até os modelos com o melhor custo-benefício.</p>
     </header>
 
@@ -269,14 +243,15 @@
         alt="iPhone 15 Pro Max" 
         class="product-image"
       >
-      <div class="product-badge">maior desempenho</div>
+      <!-- Badge com cor definida via data attribute -->
+      <div class="product-badge" data-badge-color="#ff9500">maior desempenho</div>
+      
       <h2 class="product-title">
         Apple iPhone 15 Pro Max 8GB RAM 256GB (5G)
       </h2>
       <p class="product-description">
         <span class="checkmark">✔</span>
-        O top de linha da atualidade, com a melhor tela e câmera, 
-        acabamento em titânio e excelente bateria
+        O top de linha da atualidade, com a melhor tela e câmera, acabamento em titânio e excelente bateria
       </p>
       <!-- ENVIO RÁPIDO + 14% OFF -->
       <div class="offer-info">
@@ -308,8 +283,7 @@
       </div>
     </div>
     <!-- Fim do Card de Produto 1 -->
-    
-   
+
     <!-- Card de Produto 2 -->
     <div class="product-card">
       <div class="product-number">2</div>
@@ -318,16 +292,14 @@
         alt="iPhone 15 Pro Max" 
         class="product-image"
       >
-      <div class="product-badge">maior desempenho</div>
+      <div class="product-badge" data-badge-color="#00a8ff">maior desempenho</div>
       <h2 class="product-title">
         Apple iPhone 15 Pro Max 8GB RAM 256GB (5G)
       </h2>
       <p class="product-description">
         <span class="checkmark">✔</span>
-        O top de linha da atualidade, com a melhor tela e câmera, 
-        acabamento em titânio e excelente bateria
+        O top de linha da atualidade, com a melhor tela e câmera, acabamento em titânio e excelente bateria
       </p>
-      <!-- ENVIO RÁPIDO + 14% OFF -->
       <div class="offer-info">
         <div class="fast-shipping">
           <img src="https://i.postimg.cc/BQ7YzNhY/carro-full02.png" alt="Caminhão">
@@ -358,7 +330,7 @@
     </div>
     <!-- Fim do Card de Produto 2 -->
 
-    
+
     <!-- Card de Produto 3 -->
     <div class="product-card">
       <div class="product-number">3</div>
@@ -367,16 +339,14 @@
         alt="iPhone 15 Pro Max" 
         class="product-image"
       >
-      <div class="product-badge">maior desempenho</div>
+      <div class="product-badge" data-badge-color="#a64e59">maior desempenho</div>
       <h2 class="product-title">
         Apple iPhone 15 Pro Max 8GB RAM 256GB (5G)
       </h2>
       <p class="product-description">
         <span class="checkmark">✔</span>
-        O top de linha da atualidade, com a melhor tela e câmera, 
-        acabamento em titânio e excelente bateria
+        O top de linha da atualidade, com a melhor tela e câmera, acabamento em titânio e excelente bateria
       </p>
-      <!-- ENVIO RÁPIDO + 14% OFF -->
       <div class="offer-info">
         <div class="fast-shipping">
           <img src="https://i.postimg.cc/BQ7YzNhY/carro-full02.png" alt="Caminhão">
@@ -407,7 +377,7 @@
     </div>
     <!-- Fim do Card de Produto 3 -->
 
-    
+
     <!-- Card de Produto 4 -->
     <div class="product-card">
       <div class="product-number">4</div>
@@ -416,16 +386,14 @@
         alt="iPhone 15 Pro Max" 
         class="product-image"
       >
-      <div class="product-badge">maior desempenho</div>
+      <div class="product-badge" data-badge-color="#00a8ff">maior desempenho</div>
       <h2 class="product-title">
         Apple iPhone 15 Pro Max 8GB RAM 256GB (5G)
       </h2>
       <p class="product-description">
         <span class="checkmark">✔</span>
-        O top de linha da atualidade, com a melhor tela e câmera, 
-        acabamento em titânio e excelente bateria
+        O top de linha da atualidade, com a melhor tela e câmera, acabamento em titânio e excelente bateria
       </p>
-      <!-- ENVIO RÁPIDO + 14% OFF -->
       <div class="offer-info">
         <div class="fast-shipping">
           <img src="https://i.postimg.cc/BQ7YzNhY/carro-full02.png" alt="Caminhão">
@@ -456,7 +424,7 @@
     </div>
     <!-- Fim do Card de Produto 4 -->
 
-    
+
     <!-- Card de Produto 5 -->
     <div class="product-card">
       <div class="product-number">5</div>
@@ -465,16 +433,14 @@
         alt="iPhone 15 Pro Max" 
         class="product-image"
       >
-      <div class="product-badge">maior desempenho</div>
+      <div class="product-badge" data-badge-color="#00a8ff">maior desempenho</div>
       <h2 class="product-title">
         Apple iPhone 15 Pro Max 8GB RAM 256GB (5G)
       </h2>
       <p class="product-description">
         <span class="checkmark">✔</span>
-        O top de linha da atualidade, com a melhor tela e câmera, 
-        acabamento em titânio e excelente bateria
+        O top de linha da atualidade, com a melhor tela e câmera, acabamento em titânio e excelente bateria
       </p>
-      <!-- ENVIO RÁPIDO + 14% OFF -->
       <div class="offer-info">
         <div class="fast-shipping">
           <img src="https://i.postimg.cc/BQ7YzNhY/carro-full02.png" alt="Caminhão">
@@ -505,7 +471,6 @@
     </div>
     <!-- Fim do Card de Produto 5 -->
 
-    
     <!-- Card de Produto 6 -->
     <div class="product-card">
       <div class="product-number">6</div>
@@ -514,16 +479,14 @@
         alt="iPhone 15 Pro Max" 
         class="product-image"
       >
-      <div class="product-badge">maior desempenho</div>
+      <div class="product-badge" data-badge-color="#00a8ff">maior desempenho</div>
       <h2 class="product-title">
         Apple iPhone 15 Pro Max 8GB RAM 256GB (5G)
       </h2>
       <p class="product-description">
         <span class="checkmark">✔</span>
-        O top de linha da atualidade, com a melhor tela e câmera, 
-        acabamento em titânio e excelente bateria
+        O top de linha da atualidade, com a melhor tela e câmera, acabamento em titânio e excelente bateria
       </p>
-      <!-- ENVIO RÁPIDO + 14% OFF -->
       <div class="offer-info">
         <div class="fast-shipping">
           <img src="https://i.postimg.cc/BQ7YzNhY/carro-full02.png" alt="Caminhão">
@@ -554,7 +517,6 @@
     </div>
     <!-- Fim do Card de Produto 6 -->
 
-    
     <!-- Card de Produto 7 -->
     <div class="product-card">
       <div class="product-number">7</div>
@@ -563,16 +525,14 @@
         alt="iPhone 15 Pro Max" 
         class="product-image"
       >
-      <div class="product-badge">maior desempenho</div>
+      <div class="product-badge" data-badge-color="#00a8ff">maior desempenho</div>
       <h2 class="product-title">
         Apple iPhone 15 Pro Max 8GB RAM 256GB (5G)
       </h2>
       <p class="product-description">
         <span class="checkmark">✔</span>
-        O top de linha da atualidade, com a melhor tela e câmera, 
-        acabamento em titânio e excelente bateria
+        O top de linha da atualidade, com a melhor tela e câmera, acabamento em titânio e excelente bateria
       </p>
-      <!-- ENVIO RÁPIDO + 14% OFF -->
       <div class="offer-info">
         <div class="fast-shipping">
           <img src="https://i.postimg.cc/BQ7YzNhY/carro-full02.png" alt="Caminhão">
@@ -603,7 +563,6 @@
     </div>
     <!-- Fim do Card de Produto 7 -->
 
-    
     <!-- Card de Produto 8 -->
     <div class="product-card">
       <div class="product-number">8</div>
@@ -612,16 +571,14 @@
         alt="iPhone 15 Pro Max" 
         class="product-image"
       >
-      <div class="product-badge">maior desempenho</div>
+      <div class="product-badge" data-badge-color="#00a8ff">maior desempenho</div>
       <h2 class="product-title">
         Apple iPhone 15 Pro Max 8GB RAM 256GB (5G)
       </h2>
       <p class="product-description">
         <span class="checkmark">✔</span>
-        O top de linha da atualidade, com a melhor tela e câmera, 
-        acabamento em titânio e excelente bateria
+        O top de linha da atualidade, com a melhor tela e câmera, acabamento em titânio e excelente bateria
       </p>
-      <!-- ENVIO RÁPIDO + 14% OFF -->
       <div class="offer-info">
         <div class="fast-shipping">
           <img src="https://i.postimg.cc/BQ7YzNhY/carro-full02.png" alt="Caminhão">
@@ -652,7 +609,6 @@
     </div>
     <!-- Fim do Card de Produto 8 -->
 
-    
     <!-- Card de Produto 9 -->
     <div class="product-card">
       <div class="product-number">9</div>
@@ -661,16 +617,14 @@
         alt="iPhone 15 Pro Max" 
         class="product-image"
       >
-      <div class="product-badge">maior desempenho</div>
+      <div class="product-badge" data-badge-color="#00a8ff">maior desempenho</div>
       <h2 class="product-title">
         Apple iPhone 15 Pro Max 8GB RAM 256GB (5G)
       </h2>
       <p class="product-description">
         <span class="checkmark">✔</span>
-        O top de linha da atualidade, com a melhor tela e câmera, 
-        acabamento em titânio e excelente bateria
+        O top de linha da atualidade, com a melhor tela e câmera, acabamento em titânio e excelente bateria
       </p>
-      <!-- ENVIO RÁPIDO + 14% OFF -->
       <div class="offer-info">
         <div class="fast-shipping">
           <img src="https://i.postimg.cc/BQ7YzNhY/carro-full02.png" alt="Caminhão">
@@ -701,25 +655,22 @@
     </div>
     <!-- Fim do Card de Produto 9 -->
 
-    
     <!-- Card de Produto 10 -->
     <div class="product-card">
-      <div class="product-number">10</div>
+      <div class="product-number">2</div>
       <img 
         src="https://m.media-amazon.com/images/I/61c+uQLo3XL._AC_SX679_.jpg" 
         alt="iPhone 15 Pro Max" 
         class="product-image"
       >
-      <div class="product-badge">maior desempenho</div>
+      <div class="product-badge" data-badge-color="#00a8ff">maior desempenho</div>
       <h2 class="product-title">
         Apple iPhone 15 Pro Max 8GB RAM 256GB (5G)
       </h2>
       <p class="product-description">
         <span class="checkmark">✔</span>
-        O top de linha da atualidade, com a melhor tela e câmera, 
-        acabamento em titânio e excelente bateria
+        O top de linha da atualidade, com a melhor tela e câmera, acabamento em titânio e excelente bateria
       </p>
-      <!-- ENVIO RÁPIDO + 14% OFF -->
       <div class="offer-info">
         <div class="fast-shipping">
           <img src="https://i.postimg.cc/BQ7YzNhY/carro-full02.png" alt="Caminhão">
@@ -749,9 +700,9 @@
       </div>
     </div>
     <!-- Fim do Card de Produto 10 -->
-    
-    <!-- Repetir outros produtos se necessário... -->
 
+    <!-- Você pode repetir a estrutura para os demais produtos, definindo a cor desejada em cada badge via data-badge-color -->
+    
   </div><!-- /container -->
 
   <!-- BLOCO SOBRE AS RECOMENDAÇÕES -->
@@ -769,6 +720,16 @@
     <p>© 2025 Melhores Celulares. Todos os direitos reservados.</p>
     <p>Este site participa do Programa de Afiliados da Amazon e Mercado Livre.</p>
   </footer>
+
+  <!-- Script para aplicar a cor de cada badge conforme definido no atributo data-badge-color -->
+  <script>
+    document.querySelectorAll('.product-badge').forEach(function(badge) {
+      var color = badge.getAttribute('data-badge-color');
+      if (color) {
+        badge.style.backgroundColor = color;
+      }
+    });
+  </script>
 
 </body>
 </html>
